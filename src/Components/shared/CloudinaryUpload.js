@@ -1,6 +1,7 @@
 import React from 'react'
 import { openUploadWidget } from "../../utils/CloudinaryService";
-import { cloudinary_upload_preset } from '../../config';
+import cloudinary_upload_preset from '../../config';
+// import { cloudinary_upload_preset } from '../../config';
 const CloudinaryUpload = ({setUploadedSongFileUrl,setName,setUploadedSongFileDuration}) => {
     const uploadImageWidget = () => {
         let myUploadWidget = openUploadWidget(
