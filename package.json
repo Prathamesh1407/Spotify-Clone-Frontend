@@ -48,6 +48,8 @@
   "devDependencies": {
     "@iconify/react": "^4.1.1",
     "autoprefixer": "^9.8.8",
+    "postcss-flexbugs-fixes": "^5.0.2",
+    "postcss-preset-env": "^9.3.0",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.17"
   }
 }
