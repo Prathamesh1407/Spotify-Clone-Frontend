@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import { Icon } from '@iconify/react';
 import TextInput from './shared/TextInput';
 import PasswordInput from './shared/PasswordInput';
@@ -6,14 +6,12 @@ import { Link,useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import { useCookies } from 'react-cookie';
 import { makeUnauthenticatedPOSTRequest } from '../utils/serverHelper';
-import songContext from '../Context/songContext';
 
 
 const LoginComponent = () => {
   
   const [cookie,setCookie]=useCookies(['token','firstName','lastName'])
   const [password,setPassword]=useState('')
-  const [name,setName]=useState()
   const [email,setEmail]=useState('')
   const navigate=useNavigate()
 

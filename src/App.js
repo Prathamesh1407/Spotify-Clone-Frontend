@@ -3,7 +3,7 @@ import HelloComponent from './Components/HomeComponent';
 import LoginComponent from './Components/LoginComponent';
 import SignUpComponent from './Components/SignUpComponent';
 import './output.css';
-import { BrowserRouter,Routes,Route, Navigate, useSearchParams } from 'react-router-dom';
+import { BrowserRouter,Routes,Route, Navigate} from 'react-router-dom';
 import { useCookies } from 'react-cookie';
 import LoggedInComponent from './Components/LoggedInComponent';
 import UploadSong from './Components/UploadSong';

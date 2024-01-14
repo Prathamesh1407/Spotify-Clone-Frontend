@@ -1,5 +1,5 @@
 import React, { useState,} from 'react'
-import { Link,useNavigate } from 'react-router-dom';
+import {useNavigate } from 'react-router-dom';
 // import Spotify_logo from '../Assets/Images/spotify_logo_white.svg'
 // import IconText from './shared/IconText'
 // import { Icon } from '@iconify/react';
@@ -9,7 +9,6 @@ import { Link,useNavigate } from 'react-router-dom';
 import { useEffect } from 'react';
 import LoggedInContainer from '../Containers/LoggedInContainer';
 import { makeAuthenticatedGETRequest } from '../utils/serverHelper';
-import { useSearchParams } from 'react-router-dom';
 
 // const FocusCards=[
 //   {
@@ -22,7 +21,6 @@ import { useSearchParams } from 'react-router-dom';
 
 const LoggedInComponent=()=>{
   const [playlistData,setPlaylistData]=useState([])
-  const navigate=useNavigate();
   useEffect(()=>{
     const getData=async()=>{
         const response=await makeAuthenticatedGETRequest('/playlist/get/all')
