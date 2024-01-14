@@ -1,13 +1,14 @@
 import React from 'react'
 import { openUploadWidget } from "../../utils/CloudinaryService";
-import cloudinary_upload_preset from '../../config';
+// import cloudinary_upload_preset from '../../config';
+// require('dotenv').config()
 // import { cloudinary_upload_preset } from '../../config';
 const CloudinaryUpload = ({setUploadedSongFileUrl,setName,setUploadedSongFileDuration}) => {
     const uploadImageWidget = () => {
         let myUploadWidget = openUploadWidget(
           {
             cloudName:'dceoscoh1',
-            uploadPreset:cloudinary_upload_preset,
+            uploadPreset:process.env.REACT_APP_cloudinary_upload_preset,
             sources: ["local", "url", "camera"]
           },
           function (error, result) {
