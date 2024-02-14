@@ -1,1 +1,1 @@
-export const backendUrl='https://backend-nh4v.onrender.com'
+export const backendUrl = "http://localhost:8080";
